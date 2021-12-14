@@ -2,71 +2,49 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="estilo.css">
     <title>OPTOELECTRONICA</title>
 </head>
-<body>
-    <center><img src="up.png"></center>
-    <h1 class="rojos"><center>OPTOELECTRONICA</center></h1>
-  <header>
-      <nav>
-          <ul>
-              <li><a href="index.html">Aplicacion Movil</a></li>
-              <li><a href="www.youtube.com.mx">Video de instalacion</a></li>
-          </ul>
-      </nav><br>
+<body background = "Imagenes/Medical4.jpg">
+    <center><img src="Imagenes/up imagen.png" height="100" width="200"></center> 
+    <h1><center>PROYECTO OXIGENACIÓN</center></h1>
+    <p>El proyecto se basa en un ESP8266 con diversos sensores que muestran ciertas lecturas medicas.<br>
+    <p>Tendremos una aplicación movil y web.<br></p>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="https://gallery.appinventor.mit.edu/?galleryid=0e51fd0c-706a-4fa4-b88b-f8603d882279">Descargar aplicacion Movil</a></li>
+            </ul>
+        </nav><br>
+    </header>
+    <b>OXIGENACIÓN: 98</b> <b id="dato1"></b><br>
+    <br>
+    <b>PRESIÓN: 110</b> <b id="dato2"></b><br>
+    <br>
 
-  </header>
-  <article>
-      <section>
-        <p >
-          <hr>
-        </p>
-      </section>
-  </article>
+    
+    <script src="./funciones.js"></script>
 
-  <script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-database.js"></script>
-
-<!-- TODO: Add SDKs for Firebase products that you want to use
-     https://firebase.google.com/docs/web/setup#available-libraries -->
-<script src="https://www.gstatic.com/firebasejs/7.23.0/firebase-analytics.js"></script>
-
-<script>
-  // Your web app's Firebase configuration
-  // For Firebase JS SDK v7.20.0 and later, measurementId is optional
-  var firebaseConfig = {
-    apiKey: "AIzaSyCzcfxn7IVfblkLZ7Wnyp_NELHyWF-AZs0",
-    authDomain: "optoproyectosalud.firebaseapp.com",
-    databaseURL: "https://optoproyectosalud-default-rtdb.firebaseio.com",
-    projectId: "optoproyectosalud",
-    storageBucket: "optoproyectosalud.appspot.com",
-    messagingSenderId: "266021409457",
-    appId: "1:266021409457:web:82bda5ede8c04bb5f44890",
-    measurementId: "G-1M3MENKZMH"
-};
-  // Initialize Firebase
-  firebase.initializeApp(firebaseConfig);
-  firebase.analytics();
-</script>
-
-<script src="funciones.js"></script> 
-
-<center><h2>OXIGENACION EN LA SANGRE</h2></center><br>
-75-100 (mm Hg)--Normal &nbsp;&nbsp;&nbsp;0-60 (mm Hg)--Bajo <br>
-<br>
-
-<b>Medicion en mm Hg : </b><b id="dato1"></b><br>
-<br>
-<br>
-<center><h2>PRESION CARDIACA</h2></center><br>
-</b><b>Pulsaciones por minuto : </b><b id="dato2"></b><br>
-<br>
-</b><b>Temperatura : </b><b id="dato3"></b>
-<br>
-<br>
-</b><b>Edad del paciente : </b><b id="dato4"></b>
- 
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/9.4.0/firebase-app.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        const firebaseConfig = {
+          apiKey: "AIzaSyDDQrmg_sRBn3CYgV7Lqn39yvdYKiDVRcs",
+          authDomain: "optoapp2.firebaseapp.com",
+          databaseURL: "https://optoapp2-default-rtdb.firebaseio.com",
+          projectId: "optoapp2",
+          storageBucket: "optoapp2.appspot.com",
+          messagingSenderId: "605391079867",
+          appId: "1:605391079867:web:7ca81b22a8a8b4b9af9c9e"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+      </script>
 </body>
 </html>
